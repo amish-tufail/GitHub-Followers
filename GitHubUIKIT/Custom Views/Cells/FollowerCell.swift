@@ -32,9 +32,9 @@ extension FollowerCell {
         addSubview(avatarImageView)
         
         NSLayoutConstraint.activate([
-            avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            avatarImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            avatarImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
+            avatarImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
+            avatarImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
             avatarImageView.heightAnchor.constraint(equalTo: avatarImageView.widthAnchor)
         ])
     }
@@ -43,9 +43,9 @@ extension FollowerCell {
         addSubview((userNameLabel))
         
         NSLayoutConstraint.activate([
-            userNameLabel.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12.0),
+            userNameLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12.0),
             userNameLabel.leadingAnchor.constraint(equalTo: avatarImageView.leadingAnchor, constant: 8.0),
-            userNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8.0),
+            userNameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8.0),
             userNameLabel.heightAnchor.constraint(equalToConstant: 20.0)
             
         ])
