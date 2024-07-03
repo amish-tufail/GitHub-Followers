@@ -55,5 +55,6 @@ extension FollowerCell {
 extension FollowerCell {
     func set(follower: Follower) {
         userNameLabel.text = follower.login
+        avatarImageView.downloadImage(from: follower.avatarUrl)
     }
 }
