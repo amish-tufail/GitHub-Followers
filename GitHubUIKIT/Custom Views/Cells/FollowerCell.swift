@@ -41,7 +41,6 @@ extension FollowerCell {
     
     private func configureUsernameLabel() {
         addSubview((userNameLabel))
-        userNameLabel.text = "fwfwef"
         
         NSLayoutConstraint.activate([
             userNameLabel.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12.0),
